@@ -31,15 +31,3 @@ MetroGuardian doesn't just "ping" GPS; it uses a **Multimodal Sensor Fusion** st
 - **Critical Alerts:** Bypasses "Silent" and "Do Not Disturb" modes to ensure the user wakes up.
 - **Zero Configuration:** No accounts, no logins, no tracking. Select station -> Start Alert.
 
-## 📂 Project Structure (MVP)
-```text
-├── assets/
-│   └── stops_cleaned.json      # Validated offline station database
-├── src/main/kotlin/
-│   ├── ui/                     # Minimalist B&W Search & Setup UI
-│   ├── service/
-│   │   └── LocationService.kt  # The "Heart" (Foreground Service)
-│   ├── engine/
-│   │   └── DistanceMath.kt     # Haversine & Overshoot logic
-│   └── data/
-│       └── StationProvider.kt  # Local JSON parser & search index
